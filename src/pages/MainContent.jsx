@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
+import RecipeCard from "./RecipeCard"
 
 const MainContent = () => {
 	const [recipes, setRecipes] = useState([])
@@ -149,24 +150,7 @@ const MainContent = () => {
 				) : (
 					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 						{filteredRecipes.map((recipe) => (
-							<Link key={recipe.id} to={`/recipe/${recipe.id}`}>
-								<div className="rounded-xl overflow-hidden shadow hover:shadow-lg transform hover:scale-[1.02] transition duration-300 border border-gray-100 bg-white">
-									<img
-										src={recipe.image}
-										alt={recipe.name}
-										className="w-full h-40 sm:h-48 object-cover"
-									/>
-									<div className="p-4">
-										<h2 className="text-lg font-semibold text-gray-800 truncate">
-											{recipe.name}
-										</h2>
-										<div className="mt-2 flex items-center justify-between text-sm text-gray-500">
-											<span>⏱ {recipe.cookTimeMinutes} mins</span>
-											<span>🔥 {recipe.caloriesPerServing} cal</span>
-										</div>
-									</div>
-								</div>
-							</Link>
+							<RecipeCard key={recipe.id} recipe={recipe} />
 						))}
 					</div>
 				)}

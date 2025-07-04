@@ -10,6 +10,7 @@
 - 📱 Mobile-friendly and optimized with Tailwind CSS
 - 🔗 Dynamic routing with React Router
 - 🧪 Fetched data from a dummy recipe API
+- ✨ loading spinners while fetching images
 
 ## 🛠️ Built With
 

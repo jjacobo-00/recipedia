@@ -71,7 +71,12 @@ const MainContent = () => {
 				<nav className="w-full px-4 py-4 mb-6">
 					<div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
 						{/* Logo */}
-						<h1 className="text-2xl sm:text-3xl font-bold text-[#2d3748]">recipedia</h1>
+						<Link
+							to="/"
+							className="text-2xl sm:text-3xl font-bold text-[#2d3748] transition-transform duration-200 transform hover:scale-110"
+						>
+							recipedia
+						</Link>
 						
 						{/* Filters + Search */}
 						<div className="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:gap-3 w-full sm:w-auto">

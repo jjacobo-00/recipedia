@@ -1,5 +1,7 @@
 # 🍽️ Recipedia
 
+Link: https://recipedia-gold.vercel.app
+
 **Recipedia** is a modern recipe discovery web app built with React + Vite. It lets users explore, search, and filter delicious recipes by cuisine, tags, and name — with a fast, responsive UI.
 
 ## 🚀 Features
